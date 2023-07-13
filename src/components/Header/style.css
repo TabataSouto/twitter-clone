@@ -1,0 +1,25 @@
+.timeline-header {
+  /* padding: 1rem 1rem 0 1rem; */
+  border-bottom: 1px solid var(--border);
+
+  & h3 {
+    padding: 1rem;
+  }
+
+  & div {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    font-size: 0.875rem;
+
+    & a {
+      text-decoration: none;
+      padding-bottom: 1rem;
+    }
+
+    & .current-page {
+      font-weight: 900;
+      border-bottom: solid 4px var(--twitter-blue);
+    }
+  }
+}

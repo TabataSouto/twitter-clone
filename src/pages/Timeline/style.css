@@ -1,0 +1,4 @@
+.timeline-tweet {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* impede que o padding altere o width e height do elemento */
+  box-sizing: border-box;
+}
+
+:root {
+  --twitter-blue: #1da1f2;
+  --border: #ebeef0;
+  --placeholder-tweet: #5b7083;
+}
+
+body {
+  color: #0f1419;
+  /* para suporte de navegadores baseados no chrome para deixar a fonte mais nítida */
+  -webkit-font-smoothis: antialiased;
+}
+
+body, input, textarea, button {
+  font: 400 1rem Roboto, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+/* Page: Timeline */
+
+.layout {
+  margin: 0 auto;
+  max-width: 1000px;
+
+  display: grid;
+  /* sidebar fica com 300px e o restante das colunas terá um tamanho flexível */
+  grid-template-columns: 300px 1fr;
+}
+
+.content {
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
